@@ -1,0 +1,286 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+h1, h2, h3 {
+    font-family: 'Garamond', 'Times New Roman', serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav li {
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.hero-content {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.hero-image {
+    display: none;
+}
+
+/* Introduction Section */
+#introduction {
+    text-align: center;
+}
+
+#introduction h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#introduction p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ingredients Section */
+#ingredients h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.ingredients-container {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.ingredients-list {
+    list-style-position: inside;
+}
+
+.ingredients-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1rem;
+}
+
+.ingredients-list li:last-child {
+    border-bottom: none;
+}
+
+/* Instructions Section */
+#instructions h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.instructions-list {
+    list-style-position: outside;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.instructions-list li {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.instructions-list h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+/* Tips Section */
+#tips h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tip {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.tip h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* Personal Note Section */
+#personal-note {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 30px 20px;
+}
+
+#personal-note h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+#personal-note p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    nav ul {
+        gap: 15px;
+    }
+    
+    .hero {
+        height: 400px;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    nav li {
+        font-size: 1rem;
+    }
+    
+    .hero {
+        height: 300px;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .section {
+        margin: 30px auto;
+    }
+    
+    #introduction h2,
+    #ingredients h2,
+    #instructions h2,
+    #tips h2,
+    #personal-note h2 {
+        font-size: 1.5rem;
+    }
+} 
